@@ -10,7 +10,28 @@ namespace jpGarcilazo
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hola mundo");
+            cliente cliente = new cliente();
+
+            cliente.nombre = "Jorge Luis";
+            cliente.apellido = "Reyes Suarez";
+            cliente.documentoIdentidad = "48252077";
+            cliente.sexo = true;
+            cliente.fechaRegistro = DateTime.Now;
+            cliente.fechaActualización = DateTime.Now;
+
+
+            Console.WriteLine(cliente.nombre);
+            Console.WriteLine(cliente.apellido);
+            Console.WriteLine(cliente.documentoIdentidad);
+            Console.WriteLine(cliente.fechaRegistro);
+            Console.WriteLine(cliente.fechaActualización);
+
+            Console.ReadLine();
+
+
         }
+        
+        
     }
+    
 }
